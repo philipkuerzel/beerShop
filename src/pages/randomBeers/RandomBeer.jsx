@@ -19,7 +19,7 @@ const RandomBeer = () => {
   return (
     <>
       <section className='details'>
-        <img className='productDetails' src={product.image_url} />
+        <img className='imgBeerDetail' src={product.image_url} />
         <h3>{product.name}</h3>
         <h4 className='yellow'>{product.tagline}</h4>
         <p>{product.first_brewed}</p>

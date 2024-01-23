@@ -19,7 +19,7 @@ const AllBeers = () => {
   
   return (
     <>
-        <div>
+        <div className='getAllBeers'>
           {products.map((product, index) => {
             return(
               <div key={index}>

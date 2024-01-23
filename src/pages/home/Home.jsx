@@ -6,12 +6,14 @@ import randombeer from "../../assets/img/randombeer.png"
 
 const Home = () => {
   return (
-    <section className='home'>
 
+    <>
+    <h1>Las cervezas</h1>
+    <section className='home'>
         <div>
           <div className='beersHome'>
             <img src={beers} alt="" />
-            <Link to='/beers'><button>All Beers</button></Link>
+            <Link className='showBeers' to='/beers'>All Beers</Link>
             </div> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere sequi cum officiis modi.</p>
         </div>
@@ -19,12 +21,12 @@ const Home = () => {
         <div>
           <div className='beersHome'>
             <img src={randombeer} alt="" />
-            <Link to='/random'><button>Random Beer</button></Link>
+            <Link className='showBeers' to='/random'>Random Beer</Link>
             </div> 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere sequi cum officiis modi.</p>
         </div>   
     </section>
-    
+    </>
   )
 }
 

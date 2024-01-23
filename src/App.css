@@ -1,5 +1,134 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Slab';
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color:#FFCA41;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #FFCA41;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.pGray {
+    color: #33333380;
+}
+
+.pBlack {
+    color: black;
+    margin: 1rem 0;
+}
+
+  /*  Home */
+
+.beersHome{
+    display: flex;
+    flex-direction: column;
+}
+
+.showBeers {
+    color: white;
+    font-size: 1.75rem;
+    background-color: #FFCA41;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+  /* All Beers */
+
+.getAllBeers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.listBeer {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.toBeers {
+    margin: 2rem;
+}
+
+.imgBeers {
+    width: max-content;
+    height: 12rem;
+    justify-self: center;
+}
+
+.btnDetails {
+    background-color: #FFCA41;
+    padding: 0.2rem 0.7rem;
+    border-radius: 10px;
+    color: white;
+}
+
+  /* Product Details */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.imgBeerDetail {
+    height: 30rem;
+    width: max-content;
+}
+
+.divDetails {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import Nav from '../nav/Nav'
 
 const ProductDetails = () => {
   const getID = useParams()
@@ -20,24 +21,29 @@ const ProductDetails = () => {
 
 
   return (
+    <>
     <section className='details'>
           <img className='imgBeerDetail' src={product.image_url} />
-          <h3>{product.name}</h3>
+          <h2>{product.name}</h2>
           <h4>{product.tagline}</h4>
 
-          <div>
-            <p>first brewed:</p>
-            <p>{product.first_brewed}</p>
-          </div>
-
-          <div>
-            <p>Attenuation level:</p>
-            <p>{product.attenuation_level}</p>
+          <div className='divDetails'>
+            <div>
+              <p>first brewed:</p>
+              <p>{product.first_brewed}</p>
+            </div>
+  
+            <div>
+              <p>Attenuation level:</p>
+              <p>{product.attenuation_level}</p>
+            </div>
           </div>
 
           <p>{product.description}</p>
-          <Link to='/beers'><button>Back</button></Link>
+          <Link className='toBeers' to='/beers'>Back</Link>
     </section>
+    <Nav/>
+    </>
   )
 }
 
