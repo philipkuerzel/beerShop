@@ -19,17 +19,16 @@ const AllBeers = () => {
   
   return (
     <>
-        <div className='getAllBeers'>
           {products.map((product, index) => {
             return(
-              <div key={index}>
+              <div className='getAllBeers' key={index}>
                 <ProductCard
                   product={product}
                   />
               </div>
             )
           })}
-        </div>
+        
       <Nav/>
     </>
   )

@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 main {
@@ -84,6 +84,8 @@ p {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 5vh;
 }
 
 .listBeer {
@@ -95,21 +97,16 @@ p {
     margin-bottom: 3rem;
 }
 
-.toBeers {
-    margin: 2rem;
-}
-
 .imgBeers {
     width: max-content;
     height: 12rem;
     justify-self: center;
 }
 
-.btnDetails {
-    background-color: #FFCA41;
-    padding: 0.2rem 0.7rem;
-    border-radius: 10px;
-    color: white;
+.infoBeers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
   /* Product Details */
@@ -120,6 +117,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 5vh;
 }
 
 .imgBeerDetail {
@@ -128,7 +126,34 @@ p {
 }
 
 .divDetails {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.25rem;
+}
+
+.fb, .AL {
     display: flex;
     justify-content: space-between;
+    color: #33333380;
+}
+
+/* Buttons */
+
+.backToBeersBtn {
+    margin: 2rem;
+}
+
+.homeBtn img {
+    border-radius: 50px;
+    width: 3rem;
+}
+
+.btnDetails {
+    background-color: #FFCA41;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
 }

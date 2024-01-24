@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Nav from '../nav/Nav'
+import backBtn from "../../assets/img/Back.png"
 
 const ProductDetails = () => {
   const getID = useParams()
@@ -28,19 +29,19 @@ const ProductDetails = () => {
           <h4>{product.tagline}</h4>
 
           <div className='divDetails'>
-            <div>
+            <div className='fb'>
               <p>first brewed:</p>
               <p>{product.first_brewed}</p>
             </div>
   
-            <div>
+            <div className='AL'>
               <p>Attenuation level:</p>
               <p>{product.attenuation_level}</p>
             </div>
           </div>
 
           <p>{product.description}</p>
-          <Link className='toBeers' to='/beers'>Back</Link>
+          <Link className='backToBeersBtn' to='/beers'><img src={backBtn}/></Link>
     </section>
     <Nav/>
     </>

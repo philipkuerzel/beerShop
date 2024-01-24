@@ -8,7 +8,7 @@ const Home = () => {
   return (
 
     <>
-    <h1>Las cervezas</h1>
+    <h1>The HomeBrewery</h1>
     <section className='home'>
         <div>
           <div className='beersHome'>
